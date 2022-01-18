@@ -7,11 +7,13 @@ body {
   background: white;
 }
 
-nav {
-  text-decoration: none;
+.work-title {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 3rem;
 }
 
-nav.selected {
-  background-color: black;
-  color: white;
+.PostCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

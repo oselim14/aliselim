@@ -1,0 +1,22 @@
+.PostCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.PostCards > a {
+    text-decoration: none;
+}
+
+.post-card {
+    background-color: black;
+    margin: 2vmin;
+    padding: 2vmin;
+    font-family: 'Noticia Text', serif;
+    max-width: 95vw;
+}
+
+.card-title {
+    text-decoration: none;
+    color: white;
+}

@@ -4,7 +4,8 @@ export default function ContactPage() {
 
   return (
     <>
-      <h1>Contact Work</h1>
+      <h1 className="work-title">Contact</h1>
+      <hr/>
     </>
   );
 }

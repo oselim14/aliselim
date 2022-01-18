@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import {Link} from 'react-router-dom';
 import * as postsAPI from '../../utilities/posts-api';
+import PostCard from '../../components/PostCard/PostCard';
 
 export default function VisualPage({posts, setPosts}) {
 
@@ -14,16 +14,12 @@ export default function VisualPage({posts, setPosts}) {
 
   return (
     <>
-      <h1>Visual Work</h1>
+      <h1 className="work-title">Visual Work</h1>
+      <hr/>
       <div className="PostCards">
         {posts.map((p, idx) => 
-          <Link to={`/posts/${p._id}`} key={idx}>
-            <div>
-              <h1> {p.title} </h1>
-              <img src={p.image} alt={p.title} width="300" />
-            </div>
-          </Link>
-        )}
+            <PostCard post={p} key={idx}/>
+          )}
       </div>
     </>
   );
