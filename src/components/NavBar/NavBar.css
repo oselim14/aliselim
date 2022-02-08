@@ -25,7 +25,7 @@ nav.selected a {
 }
 
 .odd-link {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .odd-link:hover {
